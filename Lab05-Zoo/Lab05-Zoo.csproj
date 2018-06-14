@@ -6,4 +6,8 @@
     <RootNamespace>Lab05_Zoo</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
+
 </Project>

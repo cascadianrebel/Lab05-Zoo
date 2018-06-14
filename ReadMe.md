@@ -3,7 +3,7 @@
 
 ## Features
 This Zoo has 9 animals with characteristics inherited through at least three different classes. 
-![Digital Representation](link to diagram)
+![Digital Representation](/Lab05-Zoo/Assets/ZooDiagram.PNG)
 
 ## OOP Principals
 1. Inheritance
@@ -19,6 +19,10 @@ This Zoo has 9 animals with characteristics inherited through at least three dif
 * The ability to limit access to code (using access modifiers like Private, Public, and Protected)
 *![Example of Encapsulation](link to example)
 
+**Interfaces**
+An Interface is a group of related functionalities available for a class to implement. Since C# doesn't support multiple inheritance, interfaces are used.
+A class can implement multiple interfaces. Interfaces are like abstract classes in that they contain no implementation of methods.
+![Example of Interfaces](link to example)
 
 ## Getting Started
 Visual Studio 2017
