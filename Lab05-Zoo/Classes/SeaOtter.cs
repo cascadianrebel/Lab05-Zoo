@@ -31,6 +31,6 @@ namespace Lab05_Zoo.Classes
             return true;
         }
 
-        public override bool HasLegs { get; set; } = false;
+        public override bool HasLegs { get; set; } = true;
     }
 }

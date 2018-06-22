@@ -33,13 +33,35 @@ namespace XUnitTestZoo
         [Fact]
         public void CanInherit()
         {
+            Bat testBat = new Bat();
+            Crow testCrow = new Crow();
+            Dolphin testDolphin = new Dolphin();
+            Owl testOwl = new Owl();
+            Penguin testPenguin = new Penguin();
+            SeaOtter testOtter = new SeaOtter();
+            Snake testSnake = new Snake();
 
+            Assert.False(testBat.Extinct);
+            Assert.False(testCrow.WarmBlooded);
+            Assert.True(testDolphin.LiveBirth);
+            Assert.True(testOwl.LaysEggs);
+            Assert.False(testPenguin.Dangerous);
+            Assert.True(testOtter.HasLegs);
+            Assert.True(testSnake.ForkedTongue);           
         }
 
         [Fact]
         public void PolymorphismWorks()
         {
+            Lizard testLizard = new Lizard();
+            Owl testOwl = new Owl();
+            Penguin testPenguin = new Penguin();
+            Crow testCrow = new Crow();
 
+            Assert.IsAssignableFrom<Animals>(testLizard);
+            Assert.Equal("Parliament", testOwl.GroupName() );
+            Assert.Equal("Murder", testCrow.GroupName());
+            Assert.Equal("colony", testPenguin.GroupName());
         }
     }
 }

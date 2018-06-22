@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab05_Zoo.Classes
 {
-    class Lizard : Scales
+    public class Lizard : Scales
     {
         public override string Name()
         {
