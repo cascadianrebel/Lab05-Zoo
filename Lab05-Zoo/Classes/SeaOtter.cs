@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Lab05_Zoo.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Lab05_Zoo.Classes
 {
-    class SeaOtter : Water
+    public class SeaOtter : Water , IEatMeat
     {
         public override string Name()
         {
@@ -23,6 +24,11 @@ namespace Lab05_Zoo.Classes
         public override string Sound()
         {
             return "chirp";
+        }
+
+        public bool Carnivore()
+        {
+            return true;
         }
 
         public override bool HasLegs { get; set; } = false;
