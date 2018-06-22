@@ -3,7 +3,7 @@
 
 ## Features
 This Zoo has 9 animals with characteristics inherited through at least three different classes. 
-![Digital Representation](/Lab05-Zoo/Assets/ZooDiagram.PNG)
+![Digital Representation](https://github.com/cascadianrebel/Lab05-Zoo/blob/master/Assets/ZooDiagram.PNG)
 
 ## OOP Principals
 1. Inheritance
