@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Lab05_Zoo.Interfaces;
 
 namespace Lab05_Zoo.Classes
 {
-    class Snake : Scales
+    public class Snake : Scales , IEatMeat
     {
         public override string Name()
         {
@@ -18,6 +19,11 @@ namespace Lab05_Zoo.Classes
         public sealed override string Exterior()
         {
             return "scales";
+        }
+
+        public bool Carnivore()
+        {
+            return true;
         }
 
         public sealed override bool HasLegs { get; set; } = false;

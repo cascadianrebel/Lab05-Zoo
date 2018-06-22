@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Lab05_Zoo.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace Lab05_Zoo.Classes
 {
-    class Bat : Land
+    public class Bat : Land , IFly
     {
         public override string Name()
         {
@@ -23,6 +25,11 @@ namespace Lab05_Zoo.Classes
         public override string Sound()
         {
             return "eeeeeeee";
+        }
+
+        public bool Fly()
+        {
+            return true;
         }
 
         public override bool Domesticated { get; set; } = false;

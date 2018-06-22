@@ -1,12 +1,17 @@
-﻿using System;
+﻿using Lab05_Zoo.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace Lab05_Zoo.Classes
 {
-    class Crow : Feathers
+    public class Crow : Feathers , IFly
     {
-
+        public bool Fly()
+        {
+            return true;
+        }
 
         public override string GroupName()
         {
